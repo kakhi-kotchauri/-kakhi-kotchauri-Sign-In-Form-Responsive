@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINI LOGIN DEMO</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+
+
+</head>
+
+<body id="body">
+
+
+
+    <div class="logpic" id="logpic">
+        <button id="logout" class="ibut">LOGOUT</button>
+        <div class="cont2">
+        <h1 class="bigtitle">You Are Signed IN</h1>
+    </div>
+    </div>
+
+
+
+    <div class="error">
+        <h1 id="errortitle" class="error-title"></h1>
+        <h1 id="errortitle2" class="error-title2"></h1>
+    </div>
+  
+    <!-- <img id="gif" class="gif" src="pic/gif.gif" alt=""> -->
+    <div id="bimage" class="bimage"></div>
+
+    <div id="par" class="par">
+
+    <header class="ss">
+        <button class="login1" id="button1">REGISTER</button>   
+        <button class="login1" id="button2">LOG IN</button>        
+    </header>
+
+    <form autocomplete="off" class="mainform" id="mainform" action="/submit" method="post">
+ <div class="wholeform">
+<div class="formParrent">
+    <div id="x" class="x-par">
+    <img class="x" src="pic/x.png" alt="smt">
+    </div>
+
+    <h1 class="title1">REGISTER HERE </h1>
+    <p class="title2">PLEASE FILL FORMS BELLOW</p>
+    <p class="title21">Email AND PASSWORD CHARACTERS MUST BE MORE THAN FIVE</p>
+    <input placeholder="Email" type="text" class="inputemail">
+    <input id="confirmem" placeholder="Confirm Email" type="text" class="inputemail">
+    <input placeholder="Password" type="password" class="inputpass">
+    <input id="confirmpass" placeholder="Confirm Password" type="password" class="inputpass">
+    <button type="submit" class="login" id="login">REGISTER</button>
+</div>
+</div>
+</form>
+
+
+
+
+<form autocomplete="off" class="mainform" id="mainformlogin" action="/submit" method="post">
+
+    <div class="wholeform">
+    <div class="formParrent">
+        <div id="xlogin2p" class="x-par">
+        <img class="x" id="xlogin2" src="pic/x.png" alt="smt">
+        </div>
+    
+        <h1 class="title1">LOG IN</h1>
+        <p class="title2">TYPE YOUR EMAIL AND PASSWORD BELLOW</p>
+        <p id="wrong" class="title3"></p>
+        <input id="emaillogin" placeholder="Email" type="text" class="inputemail">
+        <input id="passlogin" placeholder="Password" type="password" class="inputpass">
+        <div class="checkparr">
+        <input type="checkbox" class="checkbox">
+        <p class="bellowp1">Remember me?</p>
+        </div>
+        <button type="submit" class="login" id="loginl">LOGIN</button>
+        </div>    
+    </form>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="task2.js"></script>
+</body>
+
+</html>
