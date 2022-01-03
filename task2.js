@@ -23,12 +23,13 @@ const wrong = document.querySelector('#wrong')
 const logpic = document.querySelector('#logpic')
 const bimage = document.querySelector('#bimage')
 const logout = document.querySelector('#logout')
-
+const wholeform = document.querySelector('#wholeform')
+const formpar = document.querySelector('#formpar')
+const wholeform1 = document.querySelector('#wholeform1')
+const formpar1 = document.querySelector('#formpar1')
 
 let localstorer = null
 let data = []
-
-let trueuser = null
 
 
 button1.addEventListener('click', function(){
@@ -55,13 +56,13 @@ function closeform() {
   confirmpass.value = '' 
   checkbox.checked = false
   body.style.backgroundColor = 'F1F4FE'
-  email.style.borderColor = 'gray'
+  email.classList.remove('redborder')
   email.placeholder = 'Email'
-  pass.style.borderColor = 'gray'
+  pass.classList.remove('redborder')
   pass.placeholder = 'password'
-  confirmem.style.borderColor = 'gray'
+  confirmem.classList.remove('redborder')
   confirmem.placeholder = 'Confirm Email'
-  confirmpass.style.borderColor = 'gray'
+  confirmpass.classList.remove('redborder')
   confirmpass.placeholder = 'Confirm password'
 }
 
@@ -73,15 +74,30 @@ function closeform2() {
   pass2.value = '' 
   checkbox.checked = false
   body.style.backgroundColor = 'F1F4FE'
-  email2.style.borderColor = 'gray'
+  email2.classList.remove('redborder')
   email2.placeholder = 'Email'
-  pass2.style.borderColor = 'gray'
+  pass2.classList.remove('redborder')
   pass2.placeholder = 'password'
   wrong.textContent = ''
 }
 
+function outside1(event) {
+  if(event.target === wholeform1 || event.target === formpar1) {
+    closeform()
+  }
+}
+
+function outside(event) {
+  if(event.target === wholeform || event.target === formpar) {
+    closeform2()
+  }
+}
+
 closef.addEventListener('click', closeform)
 closef2.addEventListener('click', closeform2)
+wholeform.addEventListener('click', outside)
+wholeform1.addEventListener('click', outside1)
+
 
 logout.addEventListener('click', function () {
   logpic.style.display = 'none'
@@ -95,58 +111,58 @@ logout.addEventListener('click', function () {
 form.addEventListener('submit', function(event) {
   event.preventDefault()
   if(!email.value.trim()) {
-   email.style.borderColor = 'red'
+   email.classList.add('redborder')
    email.placeholder = 'field is empty'
   } 
   
   if(!confirmem.value.trim()) {
-    confirmem.style.borderColor = 'red'
+    confirmem.classList.add('redborder')
     confirmem.placeholder = 'field is empty'
    } 
 
   if (!pass.value.trim()) {
-    pass.style.borderColor = 'red'
+    pass.classList.add('redborder')
     pass.placeholder = 'field is empty'
   }
 
   if (!confirmpass.value.trim()) {
-    confirmpass.style.borderColor = 'red'
+    confirmpass.classList.add('redborder')
     confirmpass.placeholder = 'field is empty'
   }
 
   if(email.value.length < 5  && email.value.trim()) {
-    email.style.borderColor = 'red'
+    email.classList.add('redborder')
     email.value = ''
     email.placeholder = 'email is too short'
    } 
 
    
   if(confirmem.value.length < 5  && confirmem.value.trim()) {
-    confirmem.style.borderColor = 'red'
+    confirmem.classList.add('redborder')
     confirmem.value = ''
     confirmem.placeholder = 'email is too short'
    } 
 
   if (pass.value.length < 5 && pass.value.trim()) {
-    pass.style.borderColor = 'red'
+    pass.classList.add('redborder')
     pass.value = ''
     pass.placeholder = 'password is too short'
   }
 
   if (confirmpass.value.length < 5 && confirmpass.value.trim()) {
-    confirmpass.style.borderColor = 'red'
+    confirmpass.classList.add('redborder')
     confirmpass.value = ''
     confirmpass.placeholder = 'password is too short'
   }
 
   if(email.value.trim() !== confirmem.value.trim()) {
-    confirmem.style.borderColor = 'red'
+    confirmem.classList.add('redborder')
     confirmem.value = ''
     confirmem.placeholder = 'Email is not a same'
   }
 
   if(pass.value.trim() !== confirmpass.value.trim()) {
-    confirmpass.style.borderColor = 'red'
+    confirmpass.classList.add('redborder')
     confirmpass.value = ''
     confirmpass.placeholder = 'Password is not a same'
   }
@@ -165,22 +181,22 @@ form.addEventListener('submit', function(event) {
 form2.addEventListener('submit', function(event) {
   event.preventDefault()
   if(!email2.value.trim()) {
-   email2.style.borderColor = 'red'
+   email2.classList.add('redborder')
    email2.placeholder = 'field is empty'
   } 
   if (!pass2.value.trim()) {
-    pass2.style.borderColor = 'red'
+    pass2.classList.add('redborder')
     pass2.placeholder = 'field is empty'
   }
 
   if(email2.value.length < 5  && email2.value.trim()) {
-    email2.style.borderColor = 'red'
+    email2.classList.add('redborder')
     email2.value = ''
     email2.placeholder = 'email is too short'
    } 
 
   if (pass2.value.length < 5 && pass2.value.trim()) {
-    pass2.style.borderColor = 'red'
+    pass2.classList.add('redborder')
     pass2.value = ''
     pass2.placeholder = 'password is too short'
   }

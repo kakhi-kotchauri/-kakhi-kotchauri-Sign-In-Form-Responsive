@@ -6,6 +6,7 @@
     <title>MINI LOGIN DEMO</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 
 
 </head>
@@ -39,8 +40,9 @@
     </header>
 
     <form autocomplete="off" class="mainform" id="mainform" action="/submit" method="post">
- <div class="wholeform">
-<div class="formParrent">
+ <div id="wholeform1" class="wholeform">
+<div id="formpar1" class="formParrent">
+    <div class="form-background">
     <div id="x" class="x-par">
     <img class="x" src="pic/x.png" alt="smt">
     </div>
@@ -53,6 +55,7 @@
     <input placeholder="Password" type="password" class="inputpass">
     <input id="confirmpass" placeholder="Confirm Password" type="password" class="inputpass">
     <button type="submit" class="login" id="login">REGISTER</button>
+    </div>
 </div>
 </div>
 </form>
@@ -62,8 +65,9 @@
 
 <form autocomplete="off" class="mainform" id="mainformlogin" action="/submit" method="post">
 
-    <div class="wholeform">
-    <div class="formParrent">
+    <div id="wholeform" class="wholeform">
+    <div id="formpar" class="formParrent">
+        <div id="formback" class="form-background">
         <div id="xlogin2p" class="x-par">
         <img class="x" id="xlogin2" src="pic/x.png" alt="smt">
         </div>
@@ -78,7 +82,9 @@
         <p class="bellowp1">Remember me?</p>
         </div>
         <button type="submit" class="login" id="loginl">LOGIN</button>
-        </div>    
+        </div>   
+    </div> 
+    </div>
     </form>
 </div>
 </div>

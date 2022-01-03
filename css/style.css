@@ -1,4 +1,11 @@
 
+
+
+* {
+    font-family: Poppins;
+    color: rgb(59, 57, 57);
+}
+
 .logpic {
     background-image: url("https://i.ibb.co/nMDrdpH/gifcat.gif");
     height: 100%; 
@@ -31,6 +38,7 @@
 
 
 .formParrent {
+    width: 100%;
     padding-top: 3vw;
     display: flex;
     flex-direction: column;
@@ -39,8 +47,11 @@
 
 .wholeform {
     background-color:rgba(70, 64, 112, 0.80);
-    /* display: flex;
-    align-items: center; */
+    width: 100%;
+    background-color:rgba(70, 64, 112, 0.80);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
 }
 
@@ -63,7 +74,7 @@ body {
 }
 
 .x-par {
-    width: 50%;
+    width: 98%;
     display: flex;
     justify-content: flex-end;
 }
@@ -105,12 +116,15 @@ body {
 }
 
 .title2 {
+    font-family: Poppins;
     font-size: 1.7vw;
 }
 
 .title21 {
+    max-width: 90%;
     font-size: 1.6vw;
     margin-top: 1vw;
+    text-align: center;
 }
 
 .title3 {
@@ -120,12 +134,24 @@ body {
 }
 
 .inputemail, .inputpass {
-    width: 50%;
+    width: 90%;
     height: 4vw;
     margin-top: 2vw;
     padding-left: 1vw;
     font-size: 2vw;
+    border-radius: 0.4vw;
+    border-color: azure;
 }
+
+
+.inputemail:hover {
+    border-color: aqua;
+}
+
+.inputpass:hover {
+    border-color: aqua;
+}
+
 
 
 .checkbox {
@@ -199,6 +225,15 @@ font-size: 1.2vw;
     font-size: 4vw;
 }
 
+.form-background {
+     background-color: rgb(201, 201, 201);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 50%;
+     border-radius: 0.4vw;
+}
+
 
 
 
@@ -261,7 +296,7 @@ font-size: 1.2vw;
     }
     
     .x-par {
-        width: 70%;
+        width: 98%;
         display: flex;
         justify-content: flex-end;
     }
@@ -320,7 +355,7 @@ font-size: 1.2vw;
     }
     
     .inputemail, .inputpass {
-        width: 70%;
+        width: 80%;
         height: 6vw;
         margin-top: 3.4vw;
         padding-left: 2vw;
@@ -399,6 +434,18 @@ font-size: 1.2vw;
     }
 
 
+
+    .form-background {
+        background-color: rgb(201, 201, 201);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        border-radius: 0.4vw;
+   }
+
+
+
 }
 
 
@@ -449,7 +496,7 @@ font-size: 1.2vw;
     }
     
     .x-par {
-        width: 80%;
+        width: 98%;
         display: flex;
         justify-content: flex-end;
     }
@@ -495,6 +542,7 @@ font-size: 1.2vw;
     .title2 {
         text-align: center;
         font-size: 6vw;
+        max-width: 90%;
     }
     
     .title21 {
@@ -502,6 +550,7 @@ font-size: 1.2vw;
         margin-top: 4vw;
         max-width: 80%;
         text-align: center;
+        line-height: 1.3;
     }
     
     .title3 {
@@ -542,7 +591,7 @@ font-size: 1.2vw;
     
     .login {
         margin-top: 6vw;
-        margin-bottom: 3vw;
+        margin-bottom: 5vw;
         font-size: 4vw;
         border-radius: 0.6vw;
         width: 80%;
@@ -589,5 +638,20 @@ font-size: 1.2vw;
         margin-top: 10vw;
         font-size: 4vw;
     }
+
+
+    .form-background {
+        background-color: rgb(201, 201, 201);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 85%;
+        border-radius: 0.4vw;
+   }
     
+}
+
+
+.redborder {
+    border-color: red;
 }
