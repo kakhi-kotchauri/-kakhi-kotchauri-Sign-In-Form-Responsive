@@ -77,7 +77,7 @@ function closeform2() {
   email2.classList.remove('redborder')
   email2.placeholder = 'Email'
   pass2.classList.remove('redborder')
-  pass2.placeholder = 'password'
+  pass2.placeholder = 'Password'
   wrong.textContent = ''
 }
 
