@@ -113,6 +113,7 @@ body {
 .title1 {
    font-size: 2.3vw;
    margin-bottom: 2vw;
+   font-family: Poppins;
 }
 
 .title2 {
@@ -252,7 +253,7 @@ font-size: 1.2vw;
 }
 
 .form-background {
-     background-color: rgb(238, 238, 238);
+     background-color: white;
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -477,7 +478,7 @@ font-size: 1.2vw;
 
 
     .form-background {
-        background-color: rgb(238, 238, 238);
+        background-color: white;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -608,7 +609,7 @@ font-size: 1.2vw;
         margin-top: 6vw;
         padding-left: 1vw;
         font-size: 6vw;
-        border-radius: 0.7vw;
+        border-radius: 1.2vw;
     }
     
     
@@ -636,7 +637,7 @@ font-size: 1.2vw;
         margin-top: 6vw;
         margin-bottom: 12vw;
         font-size: 4vw;
-        border-radius: 0.6vw;
+        border-radius: 1.2vw;
         width: 80%;
         height: 10vw;
         display: block;
@@ -647,7 +648,7 @@ font-size: 1.2vw;
         margin-top: 5vw;
         margin-bottom: 4vw;
         font-size: 4vw;
-        border-radius: 0.6vw;
+        border-radius: 1.2vw;
         width: 80%;
         height: 10vw;
         display: block;
@@ -695,12 +696,12 @@ font-size: 1.2vw;
 
 
     .form-background {
-        background-color: rgb(238, 238, 238);
+        background-color: white;
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 85%;
-        border-radius: 0.4vw;
+        border-radius: 1.7vw;
    }
     
 }
