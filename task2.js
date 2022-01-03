@@ -59,11 +59,11 @@ function closeform() {
   email.classList.remove('redborder')
   email.placeholder = 'Email'
   pass.classList.remove('redborder')
-  pass.placeholder = 'password'
+  pass.placeholder = 'Password'
   confirmem.classList.remove('redborder')
   confirmem.placeholder = 'Confirm Email'
   confirmpass.classList.remove('redborder')
-  confirmpass.placeholder = 'Confirm password'
+  confirmpass.placeholder = 'Confirm Password'
 }
 
 function closeform2() {
