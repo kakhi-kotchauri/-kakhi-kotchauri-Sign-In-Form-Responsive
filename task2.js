@@ -27,6 +27,7 @@ const wholeform = document.querySelector('#wholeform')
 const formpar = document.querySelector('#formpar')
 const wholeform1 = document.querySelector('#wholeform1')
 const formpar1 = document.querySelector('#formpar1')
+const header = document.querySelector('#header')
 
 let localstorer = null
 let data = []
@@ -34,22 +35,19 @@ let data = []
 
 button1.addEventListener('click', function(){
     mainform.style.display = 'block'
-    button1.style.display = 'none'
-    button2.style.display = 'none'
+    header.style.display = 'none'
     body.style.backgroundColor = 'rgba(4, 12, 5, 0.22)'
 })
 
 button2.addEventListener('click', function(){
   form2.style.display = 'block'
-  button1.style.display = 'none'
-  button2.style.display = 'none'
+  header.style.display = 'none'
   body.style.backgroundColor = 'rgba(4, 12, 5, 0.22)'
 })
 
 function closeform() {
   mainform.style.display = 'none'
-  button1.style.display = 'inline'
-  button2.style.display = 'inline'
+  header.style.display = 'flex'
   email.value = '' 
   pass.value = '' 
   confirmem.value = '' 
@@ -68,8 +66,7 @@ function closeform() {
 
 function closeform2() {
   form2.style.display = 'none'
-  button1.style.display = 'inline'
-  button2.style.display = 'inline'
+  header.style.display = 'flex'
   email2.value = '' 
   pass2.value = '' 
   checkbox.checked = false

@@ -57,12 +57,17 @@
 
 .bimage {
     background-image: url("https://i.ibb.co/KDqSxK7/gif.gif");
-    height: 100%; 
+    height: 100vh; 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+.test {
+    width: 50%;
+    height: 100vw;
+    background-color: red;
+}
 
 body {
     background-color: F1F4FE;
@@ -80,27 +85,30 @@ body {
 }
 
 .x {
-    width: 3vw;
+    width: 2.3vw;
+    background-color: rgba(114, 182, 207, 0.1);
+    border-radius: 2vw;
+    margin-top: 0.3vw;
+}
+
+.x:hover {
+    background-color: rgba(100, 103, 104, 0.3);
+    transition-duration: 0.1s;
 }
 
 .ss {
-    display: flex;
-    justify-content: flex-end;
+   display: flex;
+   justify-content: flex-end;
+   position: fixed;
+   top: 0;
+   z-index: 10;
+   width: 100%;
 }
 
 
-
-.gif {
-    position: relative;
-    width: 100vw;
-    z-index: 0;
-}
 
 .par {
     width: 100%;
-    position: absolute;
-    z-index: 1;
-    top: 0;
 }
 
 
@@ -108,6 +116,14 @@ body {
     margin-right: 1vw;
     margin-top: 1vw;
     font-size: 2vw;
+    background-color: rgb(235, 226, 226);
+    border: solid;
+    border-radius: 0.6vw;
+    border-width: 0.1vw;
+}
+
+.login1:hover {
+    background-color: rgb(183, 208, 211);
 }
 
 .title1 {
@@ -307,7 +323,7 @@ font-size: 1.2vw;
 
     .bimage {
         background-image: url("https://i.ibb.co/KDqSxK7/gif.gif");
-        height: 100%; 
+        height: 100vh; 
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -316,7 +332,7 @@ font-size: 1.2vw;
     
     body {
         background-color: F1F4FE;
-        overflow-y: hidden;
+        /* overflow-y: hidden; */
         height: 100vh;
     }
     
@@ -332,13 +348,14 @@ font-size: 1.2vw;
     
     .x {
         width: 5vw;
+        border-radius: 4vw;
     }
     
-    .ss {
+    /* .ss {
         display: flex;
         justify-content: flex-end;
     }
-    
+     */
     
     
     .gif {
@@ -349,9 +366,7 @@ font-size: 1.2vw;
     
     .par {
         width: 100%;
-        position: absolute;
-        z-index: 1;
-        top: 0;
+
     }
     
     
@@ -530,7 +545,8 @@ font-size: 1.2vw;
     
     body {
         background-color: rgb(71, 91, 201);
-        overflow-y: hidden;
+        /* overflow-y: hidden; */
+        margin-bottom: 200vw;
     }
     
     .mainform {
@@ -545,16 +561,17 @@ font-size: 1.2vw;
     
     .x {
         width: 8vw;
+        border-radius: 4vw;
     }
     
-    .ss {
+    /* .ss {
         display: flex;
         justify-content: flex-end;
-    }
+    } */
 
 .bimage {
     background-image: url("https://i.ibb.co/KDqSxK7/gif.gif");
-    height: 100%; 
+    height: 100vh; 
     background-position: left center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -564,17 +581,24 @@ font-size: 1.2vw;
     
     .par {
         width: 100%;
-        position: absolute;
-        z-index: 1;
-        top: 0;
     }
     
     
-    .login1{
-        margin-right: 2vw;
-        margin-top: 2vw;
-        font-size: 5vw;
-    }
+
+.login1{
+    margin-right: 1vw;
+    margin-top: 1vw;
+    font-size: 5vw;
+    background-color: rgb(235, 226, 226);
+    border: solid;
+    border-radius: 1.5vw;
+    border-width: 0.3vw;
+}
+
+.login1:hover {
+    background-color: rgb(183, 208, 211);
+}
+
     
     .title1 {
        font-size: 7vw;
